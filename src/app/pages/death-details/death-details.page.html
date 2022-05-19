@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start" defaultHref="/tabs/deaths">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ death?.death }}</ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngIf="death" class="movie-card">
+    <ion-item >
+      <ion-icon name="skull-outline" slot="start"></ion-icon>
+      Number of Death: {{death.deathCount}}
+    </ion-item>
+  </ion-card>
+</ion-content>
