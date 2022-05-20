@@ -1,9 +1,11 @@
-
+<!-- Changed the view to read the values, adding icons and images
+used the secondary color that I changed in css in theme, and i changed the color of icons in tabs.page.scss -->  
 <ion-header>
   <ion-toolbar color="secondary">
     <ion-buttons slot="start" defaultHref="/tabs/characters">
       <ion-back-button></ion-back-button>
     </ion-buttons>
+    <ion-title>{{ character?.name }}</ion-title>
     <ion-buttons slot="end">
       <ion-button (click)="unfavoriteepisode()" *ngIf="isFavorite">
         <ion-icon name="star" slot="icon-only" color="warning"></ion-icon>

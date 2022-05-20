@@ -1,3 +1,5 @@
+/**Importing Activated Router,Service
+ *  adding two properties and a constructor */
 import { ApiService } from './../../services/api.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
