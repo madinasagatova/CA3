@@ -1,17 +1,18 @@
+
 <ion-header>
   <ion-toolbar color="secondary">
     <ion-buttons slot="start" defaultHref="/tabs/characters">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>{{ character?.name }}</ion-title>
     <ion-buttons slot="end">
-      <ion-button (click)="unfavoritecharacter()" *ngIf="isFavorite">
+      <ion-button (click)="unfavoriteepisode()" *ngIf="isFavorite">
         <ion-icon name="star" slot="icon-only" color="warning"></ion-icon>
       </ion-button>
-      <ion-button (click)="favoritecharacter()" *ngIf="!isFavorite">
+      <ion-button (click)="favoriteepisode()" *ngIf="!isFavorite">
         <ion-icon name="star-outline" slot="icon-only" color="warning"></ion-icon>
       </ion-button>
     </ion-buttons>
+   
   </ion-toolbar>
 </ion-header>
 
@@ -25,15 +26,15 @@
       Date of birth: {{character.birthday}}
     </ion-item>
     <ion-item >
-      <ion-icon name="videocam-outline" slot="start"></ion-icon>
+      <ion-icon name="videocam-sharp" slot="start"></ion-icon>
       Seasons: {{ character.category }}
     </ion-item>
     <ion-item >
-      <ion-icon name="recording-outline" slot="start"></ion-icon>
+      <ion-icon name="recording-sharp" slot="start"></ion-icon>
       Occupation: {{ character.occupation }}
     </ion-item>
     <ion-item >
-      <ion-icon name="person-outline" slot="start"></ion-icon>
+      <ion-icon name="person-sharp" slot="start"></ion-icon>
       Nickname: {{ character.nickname }}
       , Actor Name: {{character.portrayed}}
     </ion-item>

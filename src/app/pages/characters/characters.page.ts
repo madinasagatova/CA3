@@ -1,3 +1,6 @@
+/**Request is Observable assigned to the variable characters, making a GET request
+ * with the observable need to subscribe() to the stream of data
+ */
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';

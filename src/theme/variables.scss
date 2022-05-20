@@ -11,7 +11,7 @@
   --ion-color-primary-shade: #3171e0;
   --ion-color-primary-tint: #4c8dff;
 
-  /** secondary **/
+  /** costomised my own secondary color**/
   --ion-color-secondary: #80aec0;
   --ion-color-secondary-rgb: 61, 194, 255;
   --ion-color-secondary-contrast: #ffffff;
@@ -78,8 +78,37 @@
 
 
 }
+/*
+   * background and text 
+   * -------------------------------------------
+   */
+:root {
+	--ion-background-color: #fafafa;
+	--ion-background-color-rgb: 221,237,254;
 
+	--ion-text-color: #3a3a3a;
+	--ion-text-color-rgb: 0,109,143;
 
+	--ion-color-step-50: #d2e7f8;
+	--ion-color-step-100: #c7e0f3;
+	--ion-color-step-150: #bcdaed;
+	--ion-color-step-200: #b1d3e8;
+	--ion-color-step-250: #a6cde2;
+	--ion-color-step-300: #9bc7dd;
+	--ion-color-step-350: #90c0d7;
+	--ion-color-step-400: #85bad2;
+	--ion-color-step-450: #7ab3cc;
+	--ion-color-step-500: #6fadc7;
+	--ion-color-step-550: #63a7c1;
+	--ion-color-step-600: #58a0bb;
+	--ion-color-step-650: #4d9ab6;
+	--ion-color-step-700: #4293b0;
+	--ion-color-step-750: #378dab;
+	--ion-color-step-800: #2c87a5;
+	--ion-color-step-850: #2180a0;
+	--ion-color-step-900: #167a9a;
+	--ion-color-step-950: #0b7395;
+}
 
 
 @media (prefers-color-scheme: dark) {
@@ -237,6 +266,6 @@
   }
 
   ion-title.title-large {
-    --color: white;
+    --color: rgb(255, 254, 254);
   }
 }
